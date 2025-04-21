@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/widgets/custom_drawer.dart';
 import 'package:hello_world/widgets/login_form.dart';
 
 class LoginPage extends StatelessWidget {
@@ -7,7 +8,9 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF5F5F5), // Cor de fundo da tela
+      appBar: AppBar(title: const Text('Iniciar sessão')),
+      drawer: const CustomDrawer(),
+      backgroundColor: const Color(0xFFF5F5F5),
       body: Center(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(24),
