@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/validators/form_login_validator.dart';
+import 'package:hello_world/validators/form_validator.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -43,7 +43,7 @@ class _LoginFormState extends State<LoginForm> {
               fillColor: Colors.grey.shade100,
               prefixIcon: const Icon(Icons.email),
             ),
-            validator: FormValidators.validarEmail,
+            validator: FormLoginValidator.validateEmail,
           ),
           const SizedBox(height: 16),
           TextFormField(
@@ -58,7 +58,7 @@ class _LoginFormState extends State<LoginForm> {
               fillColor: Colors.grey.shade100,
               prefixIcon: const Icon(Icons.lock),
             ),
-            validator: FormValidators.validarSenha,
+            validator: FormLoginValidator.validateEmail,
           ),
           const SizedBox(height: 24),
           SizedBox(

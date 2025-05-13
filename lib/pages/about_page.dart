@@ -9,9 +9,7 @@ class AboutPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Sobre')),
       drawer: const CustomDrawer(),
-      body: const Center(
-        child: Text('Esta é a página Sobre.'),
-      ),
+      body: const Center(child: Text('Esta é a página Sobre.')),
     );
   }
 }
